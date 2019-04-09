@@ -62,10 +62,11 @@ def all_holidays_with_bbq(holiday_hash)
   data.each do |holiday, value|
     value.each do |supply|
      if supply == "BBQ"
-        bbq_array << holiday
+        bbq_array.push(holiday)
       end
     end 
   end 
+  bbq_array
 end
 
 end 
